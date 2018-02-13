@@ -1,12 +1,22 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>URL Shortener</title>
+    <title>URL Shortener API</title>
 </head>
+
 <body>
-    <h1>URL Shortener</h1>
-    <p>Quick description of how things work</p>
+    <h1>URL Shortener API</h1>
+
+    <p>An API that allows the user to turn a regular URL into a shortened one for ease of replication and use. 
+        The API will prepend a <code>https://</code> if your input doesnt't contain it, but otherwise it's up to you to 
+        ensure the URL is valid.
+    </p>
+    <p>After adding a URL to the Database, the API will return a JSON object of the form <code>{"_id" : "a1e2f0", "originalUrl" : "https://www.wherever.com"}</code></p>
+
+    <p><em>API end-points:</em></p>
+    <p>Add a URL: <code><strong>url</strong>/new/www.newurl.com</code> </p>
+    <p>Link to the URL: <code><strong>url</strong>/a1e2f0</code> </p>
 
 </body>
-
 </html>
